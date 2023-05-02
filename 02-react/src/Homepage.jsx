@@ -10,7 +10,7 @@ function Homepage() {
 
   return (
     <div className="container">
-      <h1>Welcome!!!!</h1>
+      <h1>Welcome!</h1>
       <h2>We think you&rsquo;ll like it here.</h2>
 
       <div className="count-area">
