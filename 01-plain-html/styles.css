@@ -1,0 +1,77 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 70px 10px;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+a:link,
+a:visited {
+  color: rgb(74, 46, 255);
+}
+
+h1 {
+  font-size: 5rem;
+  color: rgb(74, 46, 255);
+  margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0 0 2rem 0;
+}
+
+.count-area {
+  background-color: #e4e4e4;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.count-area p {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.count-area button {
+  background-color: rgb(74, 46, 255);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+div.photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease-out;
+  opacity: 0.5;
+  filter: blur(3px) grayscale(0.5);
+}
+
+div.photos :nth-child(4) {
+  grid-column: span 3;
+}
+
+img:hover {
+  opacity: 1;
+  filter: none;
+}
